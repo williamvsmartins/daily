@@ -1,11 +1,12 @@
 import Header from "../Header";
 import Sidebar from "../Sidebar";
 import { Container, SidebarContainer, ContentContainer} from './styles'
+import { User } from "../../pages/home";
 
-function Layout ({ children }) {
+function Layout ({ user, children }) {
     return (
         <>
-            <Header></Header>
+            <Header user={user}></Header>
             <Container>
                 <ContentContainer>
                     {children}
