@@ -2,16 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
 const AccountSchema = new Schema({
-    account: {
-        type: Number,
-        required: true,
-        unique: true
-    },
     owner: {
-        type: String,
-        required: true
-    },
-    password: {
         type: String,
         required: true
     },
@@ -30,6 +21,10 @@ const AccountSchema = new Schema({
         type: String,
         required: true,
         unique: true
+    },
+    picture: {
+        type: String,
+        required: true,
     }
 },
 {
